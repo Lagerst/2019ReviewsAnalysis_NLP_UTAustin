@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d33a2dc1e08d4f7b8d3aa322aa294d9f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d33a2dc1e08d4f7b8d3aa322aa294d9f" ></div>
+        
+</body>
+<script>    
+    
+            var map_d33a2dc1e08d4f7b8d3aa322aa294d9f = L.map(
+                "map_d33a2dc1e08d4f7b8d3aa322aa294d9f",
+                {
+                    center: [36.05, 104.59],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_76c9c08c476f479c8506db923017f56a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+            var marker_05f1e54b6407455994af75d1f198d9f0 = L.marker(
+                [36.05, 104.59],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_6a3995a68308433093e182c2c5ab0740 = L.popup({"maxWidth": 450});
+
+        
+            var html_1ac9c3ee38354276940b39f6537c4290 = $(`<div id="html_1ac9c3ee38354276940b39f6537c4290" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Location</td>     </tr>     <tr>       <th>1</th>       <td>Clean Room</td>     </tr>     <tr>       <th>2</th>       <td>Breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_6a3995a68308433093e182c2c5ab0740.setContent(html_1ac9c3ee38354276940b39f6537c4290);
+        
+
+        marker_05f1e54b6407455994af75d1f198d9f0.bindPopup(popup_6a3995a68308433093e182c2c5ab0740)
+        ;
+
+        
+    
+    
+            var marker_cf7d8bac5c6c4e32b353261fc09c254c = L.marker(
+                [40.858, -96.772],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_f3b8f978d0444c42af99da8405d7ffe3 = L.popup({"maxWidth": 450});
+
+        
+            var html_d7c2e708066c42f78f5295c29560ff36 = $(`<div id="html_d7c2e708066c42f78f5295c29560ff36" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Location</td>     </tr>     <tr>       <th>1</th>       <td>Room Size</td>     </tr>     <tr>       <th>2</th>       <td>Staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f3b8f978d0444c42af99da8405d7ffe3.setContent(html_d7c2e708066c42f78f5295c29560ff36);
+        
+
+        marker_cf7d8bac5c6c4e32b353261fc09c254c.bindPopup(popup_f3b8f978d0444c42af99da8405d7ffe3)
+        ;
+
+        
+    
+    
+            var marker_e6bff89365144f5d975ef569e9bdc02a = L.marker(
+                [65.55, 97.18],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_db1bb22d261d45bab73e91fff54e47f5 = L.popup({"maxWidth": 450});
+
+        
+            var html_000af5181baf488f9b38890cf9ee70ba = $(`<div id="html_000af5181baf488f9b38890cf9ee70ba" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Breakfast</td>     </tr>     <tr>       <th>1</th>       <td>Location</td>     </tr>     <tr>       <th>2</th>       <td>Room Size</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_db1bb22d261d45bab73e91fff54e47f5.setContent(html_000af5181baf488f9b38890cf9ee70ba);
+        
+
+        marker_e6bff89365144f5d975ef569e9bdc02a.bindPopup(popup_db1bb22d261d45bab73e91fff54e47f5)
+        ;
+
+        
+    
+    
+            var marker_e7f68acf148a4ebf9e2b8ca0f8318689 = L.marker(
+                [52.946, -7.983],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_ce0ff9ce4b53446390696fd4a5d02657 = L.popup({"maxWidth": 450});
+
+        
+            var html_cb27981c11c04485bf639d9fc4d4cb27 = $(`<div id="html_cb27981c11c04485bf639d9fc4d4cb27" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Location</td>     </tr>     <tr>       <th>1</th>       <td>Staff Services</td>     </tr>     <tr>       <th>2</th>       <td>Breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_ce0ff9ce4b53446390696fd4a5d02657.setContent(html_cb27981c11c04485bf639d9fc4d4cb27);
+        
+
+        marker_e7f68acf148a4ebf9e2b8ca0f8318689.bindPopup(popup_ce0ff9ce4b53446390696fd4a5d02657)
+        ;
+
+        
+    
+    
+            var marker_a1d535ceb39e4b81b5f12cfc24f96e3c = L.marker(
+                [-23.53, 134.59],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_795f590f475f4c70ba0de710673568d3 = L.popup({"maxWidth": 450});
+
+        
+            var html_cf08d36209c64e70b8c869b3116b407d = $(`<div id="html_cf08d36209c64e70b8c869b3116b407d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Location</td>     </tr>     <tr>       <th>1</th>       <td>Staff Services</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable Room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_795f590f475f4c70ba0de710673568d3.setContent(html_cf08d36209c64e70b8c869b3116b407d);
+        
+
+        marker_a1d535ceb39e4b81b5f12cfc24f96e3c.bindPopup(popup_795f590f475f4c70ba0de710673568d3)
+        ;
+
+        
+    
+    
+            var marker_49cd415eecf841babcb009e8832cbec4 = L.marker(
+                [56.596, -4.175],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_2f0da98be62140e7970d94ecb149136b = L.popup({"maxWidth": 450});
+
+        
+            var html_e75ca5d5477c41359ae41b5cf4ff413b = $(`<div id="html_e75ca5d5477c41359ae41b5cf4ff413b" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Location</td>     </tr>     <tr>       <th>1</th>       <td>Shower</td>     </tr>     <tr>       <th>2</th>       <td>Staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2f0da98be62140e7970d94ecb149136b.setContent(html_e75ca5d5477c41359ae41b5cf4ff413b);
+        
+
+        marker_49cd415eecf841babcb009e8832cbec4.bindPopup(popup_2f0da98be62140e7970d94ecb149136b)
+        ;
+
+        
+    
+    
+            var marker_bf67d3b5f956401bb75d6c7370a98f08 = L.marker(
+                [-41.1, 172.4],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_fa901a6a92394cf4a02310631b9414a1 = L.popup({"maxWidth": 450});
+
+        
+            var html_e49f9e5eab8746f6b8468251a37edcf1 = $(`<div id="html_e49f9e5eab8746f6b8468251a37edcf1" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Location</td>     </tr>     <tr>       <th>1</th>       <td>Staff Services</td>     </tr>     <tr>       <th>2</th>       <td>Lovely Room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_fa901a6a92394cf4a02310631b9414a1.setContent(html_e49f9e5eab8746f6b8468251a37edcf1);
+        
+
+        marker_bf67d3b5f956401bb75d6c7370a98f08.bindPopup(popup_fa901a6a92394cf4a02310631b9414a1)
+        ;
+
+        
+    
+    
+            var marker_828d898e79fe46c580598ee2f1e8eb24 = L.marker(
+                [50.633, 4.647],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_7beacd29ee7c4d3f852937089c6fb2c2 = L.popup({"maxWidth": 450});
+
+        
+            var html_f4fe9fc9e29f4affaf301051829a3cb2 = $(`<div id="html_f4fe9fc9e29f4affaf301051829a3cb2" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>1</th>       <td>Location</td>     </tr>     <tr>       <th>2</th>       <td>Staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_7beacd29ee7c4d3f852937089c6fb2c2.setContent(html_f4fe9fc9e29f4affaf301051829a3cb2);
+        
+
+        marker_828d898e79fe46c580598ee2f1e8eb24.bindPopup(popup_7beacd29ee7c4d3f852937089c6fb2c2)
+        ;
+
+        
+    
+    
+            var marker_8507784dd48a4e16b437f59cd3bbe992 = L.marker(
+                [48.0, 4.0],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_841f16423fdc42708a041dfa644fb9df = L.popup({"maxWidth": 450});
+
+        
+            var html_2dfdae725579452cae4421f59cfa0b27 = $(`<div id="html_2dfdae725579452cae4421f59cfa0b27" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>1</th>       <td>Location</td>     </tr>     <tr>       <th>2</th>       <td>Breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_841f16423fdc42708a041dfa644fb9df.setContent(html_2dfdae725579452cae4421f59cfa0b27);
+        
+
+        marker_8507784dd48a4e16b437f59cd3bbe992.bindPopup(popup_841f16423fdc42708a041dfa644fb9df)
+        ;
+
+        
+    
+    
+            var marker_05ec477c8d7b4bdabe509e6cad54b8c6 = L.marker(
+                [42.943, 11.953],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_5ee5776ddb3547378458a8e3e1c83e0f = L.popup({"maxWidth": 450});
+
+        
+            var html_f5ba119f1a6c4b1aa7ef625f0cf13b6c = $(`<div id="html_f5ba119f1a6c4b1aa7ef625f0cf13b6c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>1</th>       <td>Breakfast</td>     </tr>     <tr>       <th>2</th>       <td>Staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_5ee5776ddb3547378458a8e3e1c83e0f.setContent(html_f5ba119f1a6c4b1aa7ef625f0cf13b6c);
+        
+
+        marker_05ec477c8d7b4bdabe509e6cad54b8c6.bindPopup(popup_5ee5776ddb3547378458a8e3e1c83e0f)
+        ;
+
+        
+    
+    
+            var marker_586ee6e8ea2647a08756d865a80fcb0f = L.marker(
+                [63.4, -110.4],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_70b4f57094134ff3897e6a12c5cd6f98 = L.popup({"maxWidth": 450});
+
+        
+            var html_a3511034a2c04893898d2565ebf0bab9 = $(`<div id="html_a3511034a2c04893898d2565ebf0bab9" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>1</th>       <td>Location</td>     </tr>     <tr>       <th>2</th>       <td>Staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_70b4f57094134ff3897e6a12c5cd6f98.setContent(html_a3511034a2c04893898d2565ebf0bab9);
+        
+
+        marker_586ee6e8ea2647a08756d865a80fcb0f.bindPopup(popup_70b4f57094134ff3897e6a12c5cd6f98)
+        ;
+
+        
+    
+    
+            var marker_6186ba0ec31e41218c15a40dcd4e5c35 = L.marker(
+                [52.51, 5.51],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_1074a3390bb84f2c919be3c7f6a61b7a = L.popup({"maxWidth": 450});
+
+        
+            var html_adceef1794d14e21b1a69b1a130665e6 = $(`<div id="html_adceef1794d14e21b1a69b1a130665e6" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Staff Services</td>     </tr>     <tr>       <th>1</th>       <td>Location</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable Room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_1074a3390bb84f2c919be3c7f6a61b7a.setContent(html_adceef1794d14e21b1a69b1a130665e6);
+        
+
+        marker_6186ba0ec31e41218c15a40dcd4e5c35.bindPopup(popup_1074a3390bb84f2c919be3c7f6a61b7a)
+        ;
+
+        
+    
+    
+            var marker_5a3276541d0f45768df2040493d43356 = L.marker(
+                [51.147, 10.386],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_a2748da199294f97b30754c47d8bd9d3 = L.popup({"maxWidth": 450});
+
+        
+            var html_27ab138885d74b7e800c4b71a4d7031c = $(`<div id="html_27ab138885d74b7e800c4b71a4d7031c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Breakfast</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>2</th>       <td>Location</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_a2748da199294f97b30754c47d8bd9d3.setContent(html_27ab138885d74b7e800c4b71a4d7031c);
+        
+
+        marker_5a3276541d0f45768df2040493d43356.bindPopup(popup_a2748da199294f97b30754c47d8bd9d3)
+        ;
+
+        
+    
+    
+            var marker_5af6e627ec1e4b8aa324adf097019167 = L.marker(
+                [31.524, 34.871],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_dfaf40dc690842269af3d0b616ed71f3 = L.popup({"maxWidth": 450});
+
+        
+            var html_b663dd8d13b646d6a95011c8c90b2872 = $(`<div id="html_b663dd8d13b646d6a95011c8c90b2872" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>location</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_dfaf40dc690842269af3d0b616ed71f3.setContent(html_b663dd8d13b646d6a95011c8c90b2872);
+        
+
+        marker_5af6e627ec1e4b8aa324adf097019167.bindPopup(popup_dfaf40dc690842269af3d0b616ed71f3)
+        ;
+
+        
+    
+    
+            var marker_e0724c656a1348a29cdcc147c5a25970 = L.marker(
+                [46.816, 8.236],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_c3877225df2a49fb872343b82f78f63f = L.popup({"maxWidth": 450});
+
+        
+            var html_f64e48edd443439cbc56b90bd5d4af3a = $(`<div id="html_f64e48edd443439cbc56b90bd5d4af3a" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>location</td>     </tr>     <tr>       <th>2</th>       <td>bathroom</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_c3877225df2a49fb872343b82f78f63f.setContent(html_f64e48edd443439cbc56b90bd5d4af3a);
+        
+
+        marker_e0724c656a1348a29cdcc147c5a25970.bindPopup(popup_c3877225df2a49fb872343b82f78f63f)
+        ;
+
+        
+    
+    
+            var marker_c0d235f376bc416bbbb148f90549cbb6 = L.marker(
+                [29.224, 47.719],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_39047271726842baa132c00591d05166 = L.popup({"maxWidth": 450});
+
+        
+            var html_35787f7a37704172891746807bc6900e = $(`<div id="html_35787f7a37704172891746807bc6900e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>staff Services</td>     </tr>     <tr>       <th>2</th>       <td>location</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_39047271726842baa132c00591d05166.setContent(html_35787f7a37704172891746807bc6900e);
+        
+
+        marker_c0d235f376bc416bbbb148f90549cbb6.bindPopup(popup_39047271726842baa132c00591d05166)
+        ;
+
+        
+    
+    
+            var marker_836aef44f898436f88f5f22feab0d2e5 = L.marker(
+                [1.3114, 103.8222],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_35278063858049f182241afb2b1507cb = L.popup({"maxWidth": 450});
+
+        
+            var html_3c386da87d444f5982f13fec6b3e2641 = $(`<div id="html_3c386da87d444f5982f13fec6b3e2641" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>location</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_35278063858049f182241afb2b1507cb.setContent(html_3c386da87d444f5982f13fec6b3e2641);
+        
+
+        marker_836aef44f898436f88f5f22feab0d2e5.bindPopup(popup_35278063858049f182241afb2b1507cb)
+        ;
+
+        
+    
+    
+            var marker_ac90387ac5a64560876851502b506968 = L.marker(
+                [38.393, 24.17],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_5587c7c2dc4b41d8b52bc89045ed8bb9 = L.popup({"maxWidth": 450});
+
+        
+            var html_12a1c4a6177b4ca590e63a3508713fa2 = $(`<div id="html_12a1c4a6177b4ca590e63a3508713fa2" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>location</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_5587c7c2dc4b41d8b52bc89045ed8bb9.setContent(html_12a1c4a6177b4ca590e63a3508713fa2);
+        
+
+        marker_ac90387ac5a64560876851502b506968.bindPopup(popup_5587c7c2dc4b41d8b52bc89045ed8bb9)
+        ;
+
+        
+    
+    
+            var marker_299dc8e378494d049733e01cce91b3e4 = L.marker(
+                [45.875, 24.939],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_24ae2d621a674c9da8a4a4a738248bb9 = L.popup({"maxWidth": 450});
+
+        
+            var html_f735305b3f1e45bd87399bb8169b8d88 = $(`<div id="html_f735305b3f1e45bd87399bb8169b8d88" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>location</td>     </tr>     <tr>       <th>1</th>       <td>breakfast</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_24ae2d621a674c9da8a4a4a738248bb9.setContent(html_f735305b3f1e45bd87399bb8169b8d88);
+        
+
+        marker_299dc8e378494d049733e01cce91b3e4.bindPopup(popup_24ae2d621a674c9da8a4a4a738248bb9)
+        ;
+
+        
+    
+    
+            var marker_8db4b99ecbf6491eacb6cd1d2602e350 = L.marker(
+                [22.3336, 114.1919],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_9b5a1d1b9784401cb79f61f1bb423441 = L.popup({"maxWidth": 450});
+
+        
+            var html_9f8336f90531482dbd8b9d7f8c5f880e = $(`<div id="html_9f8336f90531482dbd8b9d7f8c5f880e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>location</td>     </tr>     <tr>       <th>1</th>       <td>staff Services</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_9b5a1d1b9784401cb79f61f1bb423441.setContent(html_9f8336f90531482dbd8b9d7f8c5f880e);
+        
+
+        marker_8db4b99ecbf6491eacb6cd1d2602e350.bindPopup(popup_9b5a1d1b9784401cb79f61f1bb423441)
+        ;
+
+        
+    
+    
+            var marker_f92ee22bdd8d45aaa0cd39d38306a699 = L.marker(
+                [24.886, 44.209],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_f9a5c685f83a4669a559a6826e33e0a6 = L.popup({"maxWidth": 450});
+
+        
+            var html_b118fc175a5b48cba75866718e0ad169 = $(`<div id="html_b118fc175a5b48cba75866718e0ad169" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>room size</td>     </tr>     <tr>       <th>1</th>       <td>location</td>     </tr>     <tr>       <th>2</th>       <td>staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f9a5c685f83a4669a559a6826e33e0a6.setContent(html_b118fc175a5b48cba75866718e0ad169);
+        
+
+        marker_f92ee22bdd8d45aaa0cd39d38306a699.bindPopup(popup_f9a5c685f83a4669a559a6826e33e0a6)
+        ;
+
+        
+    
+    
+            var marker_9db4a2c49a5b4f79b71e0700ec46d8ac = L.marker(
+                [62.67, 16.61],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_a682ce7d8ebb47c4b2f66960e89fb261 = L.popup({"maxWidth": 450});
+
+        
+            var html_a7543df942424c769fe25d2d3cc60815 = $(`<div id="html_a7543df942424c769fe25d2d3cc60815" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>location</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_a682ce7d8ebb47c4b2f66960e89fb261.setContent(html_a7543df942424c769fe25d2d3cc60815);
+        
+
+        marker_9db4a2c49a5b4f79b71e0700ec46d8ac.bindPopup(popup_a682ce7d8ebb47c4b2f66960e89fb261)
+        ;
+
+        
+    
+    
+            var marker_92efb273304045a4be6a9856ad1d9aeb = L.marker(
+                [39.3, 34.014],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_f09cbb2e32c14a5e95da82b6c4658458 = L.popup({"maxWidth": 450});
+
+        
+            var html_35d4ffdee1ac498a8bd63cc1ad380447 = $(`<div id="html_35d4ffdee1ac498a8bd63cc1ad380447" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>location</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f09cbb2e32c14a5e95da82b6c4658458.setContent(html_35d4ffdee1ac498a8bd63cc1ad380447);
+        
+
+        marker_92efb273304045a4be6a9856ad1d9aeb.bindPopup(popup_f09cbb2e32c14a5e95da82b6c4658458)
+        ;
+
+        
+    
+    
+            var marker_e4cd9e54209b4d3682ed84ab19a51458 = L.marker(
+                [39.977, -3.12],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_49b3162c7cb44b669612cd9e061f4b0f = L.popup({"maxWidth": 450});
+
+        
+            var html_a78761f8f3b7403988247a2cd734c4a9 = $(`<div id="html_a78761f8f3b7403988247a2cd734c4a9" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>service</td>     </tr>     <tr>       <th>2</th>       <td>location</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_49b3162c7cb44b669612cd9e061f4b0f.setContent(html_a78761f8f3b7403988247a2cd734c4a9);
+        
+
+        marker_e4cd9e54209b4d3682ed84ab19a51458.bindPopup(popup_49b3162c7cb44b669612cd9e061f4b0f)
+        ;
+
+        
+    
+    
+            var marker_a410962d50694bceae7430bb51a3c1f1 = L.marker(
+                [-30.52, 24.87],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_362139abe75d4ed98137fb9dbbf032d3 = L.popup({"maxWidth": 450});
+
+        
+            var html_e2428a9dccd848d39275a77e706e52e1 = $(`<div id="html_e2428a9dccd848d39275a77e706e52e1" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>location</td>     </tr>     <tr>       <th>2</th>       <td>staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_362139abe75d4ed98137fb9dbbf032d3.setContent(html_e2428a9dccd848d39275a77e706e52e1);
+        
+
+        marker_a410962d50694bceae7430bb51a3c1f1.bindPopup(popup_362139abe75d4ed98137fb9dbbf032d3)
+        ;
+
+        
+    
+    
+            var marker_97d6bcf26c64465fa28e0a3d9968d8c8 = L.marker(
+                [23.826, 54.404],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_7e63bdbb567f4d578343c74bef07791a = L.popup({"maxWidth": 450});
+
+        
+            var html_671b96d0ee8549debf7a13e6b1a0116d = $(`<div id="html_671b96d0ee8549debf7a13e6b1a0116d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>location</td>     </tr>     <tr>       <th>2</th>       <td>food</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_7e63bdbb567f4d578343c74bef07791a.setContent(html_671b96d0ee8549debf7a13e6b1a0116d);
+        
+
+        marker_97d6bcf26c64465fa28e0a3d9968d8c8.bindPopup(popup_7e63bdbb567f4d578343c74bef07791a)
+        ;
+
+        
+    
+    
+            var marker_6efed78506bb4f4796f3e0bd092aec8c = L.marker(
+                [22.59, 80.6],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_8e4c9e2daef243c2b1c7882a498b4501 = L.popup({"maxWidth": 450});
+
+        
+            var html_597f1f722feb48ce8d574a3199095fc7 = $(`<div id="html_597f1f722feb48ce8d574a3199095fc7" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>location</td>     </tr>     <tr>       <th>2</th>       <td>staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_8e4c9e2daef243c2b1c7882a498b4501.setContent(html_597f1f722feb48ce8d574a3199095fc7);
+        
+
+        marker_6efed78506bb4f4796f3e0bd092aec8c.bindPopup(popup_8e4c9e2daef243c2b1c7882a498b4501)
+        ;
+
+        
+    
+    
+            var marker_1762e751488d4424a097d2434f2105bb = L.marker(
+                [64.4459613, -149.680909],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_4040e6bf689d48cfbb6dbbf4b9f1411c = L.popup({"maxWidth": 450});
+
+        
+            var html_07e62fa11e3b49d89892540707a8be53 = $(`<div id="html_07e62fa11e3b49d89892540707a8be53" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>staff Services</td>     </tr>     <tr>       <th>1</th>       <td>service</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_4040e6bf689d48cfbb6dbbf4b9f1411c.setContent(html_07e62fa11e3b49d89892540707a8be53);
+        
+
+        marker_1762e751488d4424a097d2434f2105bb.bindPopup(popup_4040e6bf689d48cfbb6dbbf4b9f1411c)
+        ;
+
+        
+    
+    
+            var marker_51014914822d4a06bfc67a307ae718e8 = L.marker(
+                [33.2588817, -86.8295337],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_e811645df766490f848eb85e2ac011c2 = L.popup({"maxWidth": 450});
+
+        
+            var html_e272da8cc1fd48b99fcaea3e041fa639 = $(`<div id="html_e272da8cc1fd48b99fcaea3e041fa639" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>staff Services</td>     </tr>     <tr>       <th>1</th>       <td>breakfast</td>     </tr>     <tr>       <th>2</th>       <td>location</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_e811645df766490f848eb85e2ac011c2.setContent(html_e272da8cc1fd48b99fcaea3e041fa639);
+        
+
+        marker_51014914822d4a06bfc67a307ae718e8.bindPopup(popup_e811645df766490f848eb85e2ac011c2)
+        ;
+
+        
+    
+    
+            var marker_c67386bcbd7a40d0bcad8555c0b27a61 = L.marker(
+                [35.2048883, -92.4479108],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_e6f7a206a9a943c583bf6261af09f4fc = L.popup({"maxWidth": 450});
+
+        
+            var html_c26f397a0f234a028c77bc9219a7b77c = $(`<div id="html_c26f397a0f234a028c77bc9219a7b77c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_e6f7a206a9a943c583bf6261af09f4fc.setContent(html_c26f397a0f234a028c77bc9219a7b77c);
+        
+
+        marker_c67386bcbd7a40d0bcad8555c0b27a61.bindPopup(popup_e6f7a206a9a943c583bf6261af09f4fc)
+        ;
+
+        
+    
+    
+            var marker_8bd50f16d0fe4ee9aaf0c1163b18a825 = L.marker(
+                [34.255, -111.42],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_4dcfdf00274d49a2a27ff279a97dc0f2 = L.popup({"maxWidth": 450});
+
+        
+            var html_8839563f8523497b9a6facd60c815a55 = $(`<div id="html_8839563f8523497b9a6facd60c815a55" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>location</td>     </tr>     <tr>       <th>2</th>       <td>breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_4dcfdf00274d49a2a27ff279a97dc0f2.setContent(html_8839563f8523497b9a6facd60c815a55);
+        
+
+        marker_8bd50f16d0fe4ee9aaf0c1163b18a825.bindPopup(popup_4dcfdf00274d49a2a27ff279a97dc0f2)
+        ;
+
+        
+    
+    
+            var marker_ee80db32023a4f7f8037e2735e944a8e = L.marker(
+                [36.7014631, -118.7559974],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_fe2e4a5cb5f548baafefac610e2f40a1 = L.popup({"maxWidth": 450});
+
+        
+            var html_e82f19c884b34d838b719f8cb5144a67 = $(`<div id="html_e82f19c884b34d838b719f8cb5144a67" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>service</td>     </tr>     <tr>       <th>2</th>       <td>breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_fe2e4a5cb5f548baafefac610e2f40a1.setContent(html_e82f19c884b34d838b719f8cb5144a67);
+        
+
+        marker_ee80db32023a4f7f8037e2735e944a8e.bindPopup(popup_fe2e4a5cb5f548baafefac610e2f40a1)
+        ;
+
+        
+    
+    
+            var marker_bcb023c91d854c0fa79f90f67f3ac3f6 = L.marker(
+                [38.7251776, -105.6077167],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_55b42207903b4555a0be053d4008b1ef = L.popup({"maxWidth": 450});
+
+        
+            var html_8c88cbe27f9849709d18278cfd1de696 = $(`<div id="html_8c88cbe27f9849709d18278cfd1de696" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>breakfast</td>     </tr>     <tr>       <th>2</th>       <td>service</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_55b42207903b4555a0be053d4008b1ef.setContent(html_8c88cbe27f9849709d18278cfd1de696);
+        
+
+        marker_bcb023c91d854c0fa79f90f67f3ac3f6.bindPopup(popup_55b42207903b4555a0be053d4008b1ef)
+        ;
+
+        
+    
+    
+            var marker_207cd2848ed649c3afd95a0a62ed5025 = L.marker(
+                [41.6500201, -72.7342163],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_716be746d57b4f87addc083e2f15c11d = L.popup({"maxWidth": 450});
+
+        
+            var html_13c5015bafb445d497f2beb874b1c675 = $(`<div id="html_13c5015bafb445d497f2beb874b1c675" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>staff Services</td>     </tr>     <tr>       <th>1</th>       <td>price</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_716be746d57b4f87addc083e2f15c11d.setContent(html_13c5015bafb445d497f2beb874b1c675);
+        
+
+        marker_207cd2848ed649c3afd95a0a62ed5025.bindPopup(popup_716be746d57b4f87addc083e2f15c11d)
+        ;
+
+        
+    
+    
+            var marker_4b4c1c11d25d4d6891cddf8c7552a350 = L.marker(
+                [38.6920451, -75.4013315],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_2daa66b0f19c477f830cc8998637fe71 = L.popup({"maxWidth": 450});
+
+        
+            var html_dd9d96ae6d7c4c468e2deb1aae3ac501 = $(`<div id="html_dd9d96ae6d7c4c468e2deb1aae3ac501" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>staff Services</td>     </tr>     <tr>       <th>2</th>       <td>breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2daa66b0f19c477f830cc8998637fe71.setContent(html_dd9d96ae6d7c4c468e2deb1aae3ac501);
+        
+
+        marker_4b4c1c11d25d4d6891cddf8c7552a350.bindPopup(popup_2daa66b0f19c477f830cc8998637fe71)
+        ;
+
+        
+    
+    
+            var marker_f93ad3f37f844b44a87071428856dd2f = L.marker(
+                [27.7567667, -81.4639835],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_15c195b8e8574793bae6383853abd1e2 = L.popup({"maxWidth": 450});
+
+        
+            var html_2d8ba25daf0348a395ff4870ffc88315 = $(`<div id="html_2d8ba25daf0348a395ff4870ffc88315" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>breakfast</td>     </tr>     <tr>       <th>2</th>       <td>service</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_15c195b8e8574793bae6383853abd1e2.setContent(html_2d8ba25daf0348a395ff4870ffc88315);
+        
+
+        marker_f93ad3f37f844b44a87071428856dd2f.bindPopup(popup_15c195b8e8574793bae6383853abd1e2)
+        ;
+
+        
+    
+    
+            var marker_07f7b03cb42146ebbd4163350efd6a98 = L.marker(
+                [32.3293809, -83.1137366],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_9e562c11a9b4423e90410527dc3e1e2c = L.popup({"maxWidth": 450});
+
+        
+            var html_d441d90a92b44671b52c74766cc05865 = $(`<div id="html_d441d90a92b44671b52c74766cc05865" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_9e562c11a9b4423e90410527dc3e1e2c.setContent(html_d441d90a92b44671b52c74766cc05865);
+        
+
+        marker_07f7b03cb42146ebbd4163350efd6a98.bindPopup(popup_9e562c11a9b4423e90410527dc3e1e2c)
+        ;
+
+        
+    
+    
+            var marker_166050d8b6d74b5f8082f2dabf158e41 = L.marker(
+                [21.2160437, -157.975203],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_06bbd1772453435f9a5b0af6d20a5dd4 = L.popup({"maxWidth": 450});
+
+        
+            var html_a9b3eddcdbcc418c9c8c4f8c68f62a85 = $(`<div id="html_a9b3eddcdbcc418c9c8c4f8c68f62a85" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>noise</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_06bbd1772453435f9a5b0af6d20a5dd4.setContent(html_a9b3eddcdbcc418c9c8c4f8c68f62a85);
+        
+
+        marker_166050d8b6d74b5f8082f2dabf158e41.bindPopup(popup_06bbd1772453435f9a5b0af6d20a5dd4)
+        ;
+
+        
+    
+    
+            var marker_7ba38ab88ea54913a65bbb65d04ec588 = L.marker(
+                [41.9216734, -93.3122705],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_e4105c97e3a9455e9bbd26c7fadde044 = L.popup({"maxWidth": 450});
+
+        
+            var html_cba9e6605bfe47039ac5b611dba2791e = $(`<div id="html_cba9e6605bfe47039ac5b611dba2791e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>breakfast</td>     </tr>     <tr>       <th>2</th>       <td>location</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_e4105c97e3a9455e9bbd26c7fadde044.setContent(html_cba9e6605bfe47039ac5b611dba2791e);
+        
+
+        marker_7ba38ab88ea54913a65bbb65d04ec588.bindPopup(popup_e4105c97e3a9455e9bbd26c7fadde044)
+        ;
+
+        
+    
+    
+            var marker_c484bdf5da43426b9bb22447657c8383 = L.marker(
+                [43.509, -115.049],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_ad0fedfd55e04eb686a4829c93fbeeab = L.popup({"maxWidth": 450});
+
+        
+            var html_daff1a2ec2b842cc9b3bbd319ff63373 = $(`<div id="html_daff1a2ec2b842cc9b3bbd319ff63373" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>facilities</td>     </tr>     <tr>       <th>1</th>       <td>breakfast</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_ad0fedfd55e04eb686a4829c93fbeeab.setContent(html_daff1a2ec2b842cc9b3bbd319ff63373);
+        
+
+        marker_c484bdf5da43426b9bb22447657c8383.bindPopup(popup_ad0fedfd55e04eb686a4829c93fbeeab)
+        ;
+
+        
+    
+    
+            var marker_bd477d2b05384e858699ac35952f4efc = L.marker(
+                [40.3270127, -86.1746933],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_85cab8a148684ba3892ac65572259e10 = L.popup({"maxWidth": 450});
+
+        
+            var html_d209ef97c2b34af7b061dc1268b8f0d5 = $(`<div id="html_d209ef97c2b34af7b061dc1268b8f0d5" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>service</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_85cab8a148684ba3892ac65572259e10.setContent(html_d209ef97c2b34af7b061dc1268b8f0d5);
+        
+
+        marker_bd477d2b05384e858699ac35952f4efc.bindPopup(popup_85cab8a148684ba3892ac65572259e10)
+        ;
+
+        
+    
+    
+            var marker_d2c2142b72b34d7b8e0b6364d5e08850 = L.marker(
+                [38.27312, -98.5821872],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_a6954e469d2a4b18b442b20c88dd3038 = L.popup({"maxWidth": 450});
+
+        
+            var html_f73b7f695f4f4195a38cb8ba43379015 = $(`<div id="html_f73b7f695f4f4195a38cb8ba43379015" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>breakfast</td>     </tr>     <tr>       <th>2</th>       <td>staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_a6954e469d2a4b18b442b20c88dd3038.setContent(html_f73b7f695f4f4195a38cb8ba43379015);
+        
+
+        marker_d2c2142b72b34d7b8e0b6364d5e08850.bindPopup(popup_a6954e469d2a4b18b442b20c88dd3038)
+        ;
+
+        
+    
+    
+            var marker_ee84325edf284aeb8bcb33efd09bb87e = L.marker(
+                [37.5726028, -85.1551411],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_e89d84adedab43e694e52b802496aaaa = L.popup({"maxWidth": 450});
+
+        
+            var html_d9051defd0944f20aa6f9ac6dc61e09a = $(`<div id="html_d9051defd0944f20aa6f9ac6dc61e09a" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>location</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_e89d84adedab43e694e52b802496aaaa.setContent(html_d9051defd0944f20aa6f9ac6dc61e09a);
+        
+
+        marker_ee84325edf284aeb8bcb33efd09bb87e.bindPopup(popup_e89d84adedab43e694e52b802496aaaa)
+        ;
+
+        
+    
+    
+            var marker_5a3729a3ad884f678ebda85ae3cd6d56 = L.marker(
+                [42.329, -72.01],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_3ea20ba038b64ad6a7f0a4b025c3159a = L.popup({"maxWidth": 450});
+
+        
+            var html_f48e3b23d22e423aa1facbf7242dc579 = $(`<div id="html_f48e3b23d22e423aa1facbf7242dc579" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>facilities</td>     </tr>     <tr>       <th>2</th>       <td>breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_3ea20ba038b64ad6a7f0a4b025c3159a.setContent(html_f48e3b23d22e423aa1facbf7242dc579);
+        
+
+        marker_5a3729a3ad884f678ebda85ae3cd6d56.bindPopup(popup_3ea20ba038b64ad6a7f0a4b025c3159a)
+        ;
+
+        
+    
+    
+            var marker_9a67690b46794b1cb94818870d4770e5 = L.marker(
+                [39.188, -76.625],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_9e154a42c22643b884179b54841c3185 = L.popup({"maxWidth": 450});
+
+        
+            var html_cdadf48600fb4db791794353dcf0acc9 = $(`<div id="html_cdadf48600fb4db791794353dcf0acc9" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>staff Services</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>price</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_9e154a42c22643b884179b54841c3185.setContent(html_cdadf48600fb4db791794353dcf0acc9);
+        
+
+        marker_9a67690b46794b1cb94818870d4770e5.bindPopup(popup_9e154a42c22643b884179b54841c3185)
+        ;
+
+        
+    
+    
+            var marker_848cffcfba9b43fd8250e7ed4064a1eb = L.marker(
+                [45.709097, -68.8590201],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_33394c0cf46e420e9d71514b1c9823a7 = L.popup({"maxWidth": 450});
+
+        
+            var html_e0ede43c15984d29a3f2fadcdb1e46aa = $(`<div id="html_e0ede43c15984d29a3f2fadcdb1e46aa" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>pool</td>     </tr>     <tr>       <th>1</th>       <td>consistent</td>     </tr>     <tr>       <th>2</th>       <td>staff Service</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_33394c0cf46e420e9d71514b1c9823a7.setContent(html_e0ede43c15984d29a3f2fadcdb1e46aa);
+        
+
+        marker_848cffcfba9b43fd8250e7ed4064a1eb.bindPopup(popup_33394c0cf46e420e9d71514b1c9823a7)
+        ;
+
+        
+    
+    
+            var marker_9da793f952f041dab8b26722acfb1b25 = L.marker(
+                [43.6211955, -84.6824346],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_7ab5568e0fb94fc290a67d2b233689d4 = L.popup({"maxWidth": 450});
+
+        
+            var html_408534413d894004922780c0bdf1d045 = $(`<div id="html_408534413d894004922780c0bdf1d045" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>stmosphere</td>     </tr>     <tr>       <th>1</th>       <td>price</td>     </tr>     <tr>       <th>2</th>       <td>clean</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_7ab5568e0fb94fc290a67d2b233689d4.setContent(html_408534413d894004922780c0bdf1d045);
+        
+
+        marker_9da793f952f041dab8b26722acfb1b25.bindPopup(popup_7ab5568e0fb94fc290a67d2b233689d4)
+        ;
+
+        
+    
+    
+            var marker_86acd89d014b48ac91973e8b865ef877 = L.marker(
+                [45.9896587, -94.6113288],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_aa68bfa244ea4ab18c0b65513af7b99a = L.popup({"maxWidth": 450});
+
+        
+            var html_f3d673c3d5d644f4a190e5037827b4f9 = $(`<div id="html_f3d673c3d5d644f4a190e5037827b4f9" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>staff Service</td>     </tr>     <tr>       <th>2</th>       <td>comfortable</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_aa68bfa244ea4ab18c0b65513af7b99a.setContent(html_f3d673c3d5d644f4a190e5037827b4f9);
+        
+
+        marker_86acd89d014b48ac91973e8b865ef877.bindPopup(popup_aa68bfa244ea4ab18c0b65513af7b99a)
+        ;
+
+        
+    
+    
+            var marker_c4de56f357e54c56985a0c7e9ab291de = L.marker(
+                [32.9715645, -89.7348497],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_86470b9f96e540c6ae14883b9c08e83b = L.popup({"maxWidth": 450});
+
+        
+            var html_1b9da4b237334a468b6cafe04fecbbd8 = $(`<div id="html_1b9da4b237334a468b6cafe04fecbbd8" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>feel free</td>     </tr>     <tr>       <th>1</th>       <td>breakfast</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_86470b9f96e540c6ae14883b9c08e83b.setContent(html_1b9da4b237334a468b6cafe04fecbbd8);
+        
+
+        marker_c4de56f357e54c56985a0c7e9ab291de.bindPopup(popup_86470b9f96e540c6ae14883b9c08e83b)
+        ;
+
+        
+    
+    
+            var marker_1414463618c84aaebc1bc5e57906c901 = L.marker(
+                [38.7604815, -92.5617875],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_ccfadf03c51c42bdba6c77afcb3f1ca9 = L.popup({"maxWidth": 450});
+
+        
+            var html_150fe49ec03a40729f8b49bff1f2d2bf = $(`<div id="html_150fe49ec03a40729f8b49bff1f2d2bf" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>staff Service</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>quiet</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_ccfadf03c51c42bdba6c77afcb3f1ca9.setContent(html_150fe49ec03a40729f8b49bff1f2d2bf);
+        
+
+        marker_1414463618c84aaebc1bc5e57906c901.bindPopup(popup_ccfadf03c51c42bdba6c77afcb3f1ca9)
+        ;
+
+        
+    
+    
+            var marker_8712a9a0fa2948e2ac01f676faa58c88 = L.marker(
+                [47.3752671, -109.6387579],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_94f891b113274d9f8760063895e6a473 = L.popup({"maxWidth": 450});
+
+        
+            var html_85e2d0fb18bf49ef9714ba99d0ad5cb8 = $(`<div id="html_85e2d0fb18bf49ef9714ba99d0ad5cb8" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>service</td>     </tr>     <tr>       <th>1</th>       <td>staff Service</td>     </tr>     <tr>       <th>2</th>       <td>atmosphere</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_94f891b113274d9f8760063895e6a473.setContent(html_85e2d0fb18bf49ef9714ba99d0ad5cb8);
+        
+
+        marker_8712a9a0fa2948e2ac01f676faa58c88.bindPopup(popup_94f891b113274d9f8760063895e6a473)
+        ;
+
+        
+    
+    
+            var marker_4e0f0c4a2bb247d496d32b63caa1f255 = L.marker(
+                [41.7370229, -99.5873816],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_7f859e27b96142ca916c87d39daaf3fc = L.popup({"maxWidth": 450});
+
+        
+            var html_e50ad297aee04a0b9c2cfc3c36e42b2d = $(`<div id="html_e50ad297aee04a0b9c2cfc3c36e42b2d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>furnishings</td>     </tr>     <tr>       <th>1</th>       <td>service</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_7f859e27b96142ca916c87d39daaf3fc.setContent(html_e50ad297aee04a0b9c2cfc3c36e42b2d);
+        
+
+        marker_4e0f0c4a2bb247d496d32b63caa1f255.bindPopup(popup_7f859e27b96142ca916c87d39daaf3fc)
+        ;
+
+        
+    
+    
+            var marker_06a51615ae20499bb0655110da5fb58d = L.marker(
+                [47.6201461, -100.540737],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_b5dc577285b343aca9a43195392e01ef = L.popup({"maxWidth": 450});
+
+        
+            var html_f7190cf5850346ac9f8b6060b8956b3e = $(`<div id="html_f7190cf5850346ac9f8b6060b8956b3e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>location</td>     </tr>     <tr>       <th>1</th>       <td>pickup service</td>     </tr>     <tr>       <th>2</th>       <td>hotel computer</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_b5dc577285b343aca9a43195392e01ef.setContent(html_f7190cf5850346ac9f8b6060b8956b3e);
+        
+
+        marker_06a51615ae20499bb0655110da5fb58d.bindPopup(popup_b5dc577285b343aca9a43195392e01ef)
+        ;
+
+        
+    
+    
+            var marker_c1a77e5979bd44069665cdfa424856b5 = L.marker(
+                [43.4849133, -71.6553992],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_d6c1ea07dbb24586ba9b3c07281d5485 = L.popup({"maxWidth": 450});
+
+        
+            var html_a18ce5eced4f4744a0bc4d817953046d = $(`<div id="html_a18ce5eced4f4744a0bc4d817953046d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>view</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_d6c1ea07dbb24586ba9b3c07281d5485.setContent(html_a18ce5eced4f4744a0bc4d817953046d);
+        
+
+        marker_c1a77e5979bd44069665cdfa424856b5.bindPopup(popup_d6c1ea07dbb24586ba9b3c07281d5485)
+        ;
+
+        
+    
+    
+            var marker_f5d9ea69c62a43bda0dd1f36abfa842f = L.marker(
+                [40.0757384, -74.4041622],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_65fba0b5d5dd4856a3762bc392564c1f = L.popup({"maxWidth": 450});
+
+        
+            var html_c6f2c0cf3462417e92b62290d388a304 = $(`<div id="html_c6f2c0cf3462417e92b62290d388a304" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>clean</td>     </tr>     <tr>       <th>1</th>       <td>breakfast</td>     </tr>     <tr>       <th>2</th>       <td>staff Service</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_65fba0b5d5dd4856a3762bc392564c1f.setContent(html_c6f2c0cf3462417e92b62290d388a304);
+        
+
+        marker_f5d9ea69c62a43bda0dd1f36abfa842f.bindPopup(popup_65fba0b5d5dd4856a3762bc392564c1f)
+        ;
+
+        
+    
+    
+            var marker_b642ec3bc2f742c78a4ec9a4276f1caf = L.marker(
+                [34.5708167, -105.993007],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_8830bcdde46546559ef654c09542380b = L.popup({"maxWidth": 450});
+
+        
+            var html_0971dc8951044e80af40544631777fee = $(`<div id="html_0971dc8951044e80af40544631777fee" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>furnishings</td>     </tr>     <tr>       <th>2</th>       <td>access</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_8830bcdde46546559ef654c09542380b.setContent(html_0971dc8951044e80af40544631777fee);
+        
+
+        marker_b642ec3bc2f742c78a4ec9a4276f1caf.bindPopup(popup_8830bcdde46546559ef654c09542380b)
+        ;
+
+        
+    
+    
+            var marker_f0aadb5eba1549aeb4c09181ff4ae10a = L.marker(
+                [39.5158825, -116.8537227],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_e82c2158cecc42c6803b97c5640353be = L.popup({"maxWidth": 450});
+
+        
+            var html_390037e66b994f318b62860985ddea2e = $(`<div id="html_390037e66b994f318b62860985ddea2e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>staff Service</td>     </tr>     <tr>       <th>2</th>       <td>furnishings</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_e82c2158cecc42c6803b97c5640353be.setContent(html_390037e66b994f318b62860985ddea2e);
+        
+
+        marker_f0aadb5eba1549aeb4c09181ff4ae10a.bindPopup(popup_e82c2158cecc42c6803b97c5640353be)
+        ;
+
+        
+    
+    
+            var marker_21267afe6d46468f801f1a64eb623140 = L.marker(
+                [43.1561681, -75.8449946],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_2293db268d1d4fef8af3173e047f63bb = L.popup({"maxWidth": 450});
+
+        
+            var html_aca55aa248e84a689e2b61b37af34de8 = $(`<div id="html_aca55aa248e84a689e2b61b37af34de8" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>sleep</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2293db268d1d4fef8af3173e047f63bb.setContent(html_aca55aa248e84a689e2b61b37af34de8);
+        
+
+        marker_21267afe6d46468f801f1a64eb623140.bindPopup(popup_2293db268d1d4fef8af3173e047f63bb)
+        ;
+
+        
+    
+    
+            var marker_e2704ee759e84d7eb54d87bfaee735f5 = L.marker(
+                [40.2253569, -82.6881395],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_7a564496b8cb4ddc9e1ffaeffdce153f = L.popup({"maxWidth": 450});
+
+        
+            var html_b4e8302ea4c24c4890a4bc8331d95493 = $(`<div id="html_b4e8302ea4c24c4890a4bc8331d95493" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Room Size</td>     </tr>     <tr>       <th>1</th>       <td>availability</td>     </tr>     <tr>       <th>2</th>       <td>Location</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_7a564496b8cb4ddc9e1ffaeffdce153f.setContent(html_b4e8302ea4c24c4890a4bc8331d95493);
+        
+
+        marker_e2704ee759e84d7eb54d87bfaee735f5.bindPopup(popup_7a564496b8cb4ddc9e1ffaeffdce153f)
+        ;
+
+        
+    
+    
+            var marker_eff7b320faf84c59a8ea9bd36e84ad90 = L.marker(
+                [34.9550817, -97.2684063],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_d91f11c66d994db08fe6b250d691cce0 = L.popup({"maxWidth": 450});
+
+        
+            var html_577a1185badf443bb30fdfbb7b27364d = $(`<div id="html_577a1185badf443bb30fdfbb7b27364d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>1</th>       <td>long check</td>     </tr>     <tr>       <th>2</th>       <td>staff Service</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_d91f11c66d994db08fe6b250d691cce0.setContent(html_577a1185badf443bb30fdfbb7b27364d);
+        
+
+        marker_eff7b320faf84c59a8ea9bd36e84ad90.bindPopup(popup_d91f11c66d994db08fe6b250d691cce0)
+        ;
+
+        
+    
+    
+            var marker_a7ba0ab2e82941e9bdfcb41595ec2c21 = L.marker(
+                [43.9792797, -120.737257],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_50d925fea7264a518fb9daf5fbc4553b = L.popup({"maxWidth": 450});
+
+        
+            var html_41fc39d9dd064fbdbd28f098dd94423e = $(`<div id="html_41fc39d9dd064fbdbd28f098dd94423e" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>expedia</td>     </tr>     <tr>       <th>1</th>       <td>gardens</td>     </tr>     <tr>       <th>2</th>       <td>pool</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_50d925fea7264a518fb9daf5fbc4553b.setContent(html_41fc39d9dd064fbdbd28f098dd94423e);
+        
+
+        marker_a7ba0ab2e82941e9bdfcb41595ec2c21.bindPopup(popup_50d925fea7264a518fb9daf5fbc4553b)
+        ;
+
+        
+    
+    
+            var marker_4fb81059aab345aaaae7fd37caafcda6 = L.marker(
+                [40.9699889, -77.7278831],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_88c87ba5f8cd41c0ae08efd9f45e372b = L.popup({"maxWidth": 450});
+
+        
+            var html_b14ff8ece5fc4d7e80a914042e52c33a = $(`<div id="html_b14ff8ece5fc4d7e80a914042e52c33a" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>location</td>     </tr>     <tr>       <th>2</th>       <td>view</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_88c87ba5f8cd41c0ae08efd9f45e372b.setContent(html_b14ff8ece5fc4d7e80a914042e52c33a);
+        
+
+        marker_4fb81059aab345aaaae7fd37caafcda6.bindPopup(popup_88c87ba5f8cd41c0ae08efd9f45e372b)
+        ;
+
+        
+    
+    
+            var marker_6bfd36d5a7664af4aae405cb342dc83d = L.marker(
+                [41.7962409, -71.5992372],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_9450f1d393d242d3bacefdc8a37d8a88 = L.popup({"maxWidth": 450});
+
+        
+            var html_fb5db89955cc4ef4ae0eda806840ba54 = $(`<div id="html_fb5db89955cc4ef4ae0eda806840ba54" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Location</td>     </tr>     <tr>       <th>1</th>       <td>Toilet ?</td>     </tr>     <tr>       <th>2</th>       <td>Breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_9450f1d393d242d3bacefdc8a37d8a88.setContent(html_fb5db89955cc4ef4ae0eda806840ba54);
+        
+
+        marker_6bfd36d5a7664af4aae405cb342dc83d.bindPopup(popup_9450f1d393d242d3bacefdc8a37d8a88)
+        ;
+
+        
+    
+    
+            var marker_066a239343834211b6e94fd62efed35d = L.marker(
+                [33.702, -80.662],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_85b69d91f44147848bc8cec53397ab69 = L.popup({"maxWidth": 450});
+
+        
+            var html_57903bf50abc4831a716499113d70319 = $(`<div id="html_57903bf50abc4831a716499113d70319" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Location</td>     </tr>     <tr>       <th>1</th>       <td>smelly</td>     </tr>     <tr>       <th>2</th>       <td>Comfortable Room</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_85b69d91f44147848bc8cec53397ab69.setContent(html_57903bf50abc4831a716499113d70319);
+        
+
+        marker_066a239343834211b6e94fd62efed35d.bindPopup(popup_85b69d91f44147848bc8cec53397ab69)
+        ;
+
+        
+    
+    
+            var marker_5e60e90d0d1745988b9123bcf440407e = L.marker(
+                [44.6471761, -100.348761],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_12d8b40a863a492ebc0be22e11f16cb2 = L.popup({"maxWidth": 450});
+
+        
+            var html_d03d5fb9727e4266889e0dcab6402016 = $(`<div id="html_d03d5fb9727e4266889e0dcab6402016" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Price</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>2</th>       <td>Furniture</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_12d8b40a863a492ebc0be22e11f16cb2.setContent(html_d03d5fb9727e4266889e0dcab6402016);
+        
+
+        marker_5e60e90d0d1745988b9123bcf440407e.bindPopup(popup_12d8b40a863a492ebc0be22e11f16cb2)
+        ;
+
+        
+    
+    
+            var marker_36909a752b96460a991f32c454ecbd44 = L.marker(
+                [35.7730076, -86.2820081],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_6575f662af4e482f8c4dabea8f33776b = L.popup({"maxWidth": 450});
+
+        
+            var html_4341422fb81a457582a3ca06864323fb = $(`<div id="html_4341422fb81a457582a3ca06864323fb" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>1</th>       <td>Coffee</td>     </tr>     <tr>       <th>2</th>       <td>Breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_6575f662af4e482f8c4dabea8f33776b.setContent(html_4341422fb81a457582a3ca06864323fb);
+        
+
+        marker_36909a752b96460a991f32c454ecbd44.bindPopup(popup_6575f662af4e482f8c4dabea8f33776b)
+        ;
+
+        
+    
+    
+            var marker_8d5a7a7c8d6b435f85a7a27ee4fd148b = L.marker(
+                [31.8160381, -99.5120986],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_2bee1af34ea148aa9978b879132adf25 = L.popup({"maxWidth": 450});
+
+        
+            var html_e10b03ed39ec48eda36cfdac6d300638 = $(`<div id="html_e10b03ed39ec48eda36cfdac6d300638" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>1</th>       <td>furnishings</td>     </tr>     <tr>       <th>2</th>       <td>Wifi</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2bee1af34ea148aa9978b879132adf25.setContent(html_e10b03ed39ec48eda36cfdac6d300638);
+        
+
+        marker_8d5a7a7c8d6b435f85a7a27ee4fd148b.bindPopup(popup_2bee1af34ea148aa9978b879132adf25)
+        ;
+
+        
+    
+    
+            var marker_bca91663448a452d869c7b88a60d0dc0 = L.marker(
+                [39.4225192, -111.7143584],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_7c996a3411cc4fdb927c64d9293fb0e7 = L.popup({"maxWidth": 450});
+
+        
+            var html_b7a17cecff70446d8ff2100be60f0a1c = $(`<div id="html_b7a17cecff70446d8ff2100be60f0a1c" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Staff Service</td>     </tr>     <tr>       <th>1</th>       <td>Breakfast</td>     </tr>     <tr>       <th>2</th>       <td>Location</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_7c996a3411cc4fdb927c64d9293fb0e7.setContent(html_b7a17cecff70446d8ff2100be60f0a1c);
+        
+
+        marker_bca91663448a452d869c7b88a60d0dc0.bindPopup(popup_7c996a3411cc4fdb927c64d9293fb0e7)
+        ;
+
+        
+    
+    
+            var marker_61d157af778547778222b2ec7d19c45f = L.marker(
+                [37.1232245, -78.4927721],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_ab827c09bdf340ce877c7dbc18d88487 = L.popup({"maxWidth": 450});
+
+        
+            var html_fc18606a3cfd4063b218c635095ca58d = $(`<div id="html_fc18606a3cfd4063b218c635095ca58d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Elevator</td>     </tr>     <tr>       <th>1</th>       <td>Location</td>     </tr>     <tr>       <th>2</th>       <td>Breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_ab827c09bdf340ce877c7dbc18d88487.setContent(html_fc18606a3cfd4063b218c635095ca58d);
+        
+
+        marker_61d157af778547778222b2ec7d19c45f.bindPopup(popup_ab827c09bdf340ce877c7dbc18d88487)
+        ;
+
+        
+    
+    
+            var marker_b3800d932aaf4618a64abb3ac37a0f39 = L.marker(
+                [44.5990718, -72.5002608],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_b388d6dc277448c6841eca7ca0ee571f = L.popup({"maxWidth": 450});
+
+        
+            var html_3419fbf2c40c46f4bb118186090ffbbf = $(`<div id="html_3419fbf2c40c46f4bb118186090ffbbf" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Restaurants</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>2</th>       <td>Staff Service</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_b388d6dc277448c6841eca7ca0ee571f.setContent(html_3419fbf2c40c46f4bb118186090ffbbf);
+        
+
+        marker_b3800d932aaf4618a64abb3ac37a0f39.bindPopup(popup_b388d6dc277448c6841eca7ca0ee571f)
+        ;
+
+        
+    
+    
+            var marker_0efc0f6c0a974d9388517872cc0d904f = L.marker(
+                [47.2868352, -120.2126139],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_2f8ed8f453dc40099b0534347efe85a0 = L.popup({"maxWidth": 450});
+
+        
+            var html_6de5e89eea744cb7b44d1fb3f1e6707d = $(`<div id="html_6de5e89eea744cb7b44d1fb3f1e6707d" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>1</th>       <td>Staff Service</td>     </tr>     <tr>       <th>2</th>       <td>Location</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2f8ed8f453dc40099b0534347efe85a0.setContent(html_6de5e89eea744cb7b44d1fb3f1e6707d);
+        
+
+        marker_0efc0f6c0a974d9388517872cc0d904f.bindPopup(popup_2f8ed8f453dc40099b0534347efe85a0)
+        ;
+
+        
+    
+    
+            var marker_87ed861a3fed47cba78a3350c777ea21 = L.marker(
+                [44.4308975, -89.6884637],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_65234d0add6348aaa842e0b3759040f3 = L.popup({"maxWidth": 450});
+
+        
+            var html_c35a0c7fed72445aa22aa10861618027 = $(`<div id="html_c35a0c7fed72445aa22aa10861618027" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Comfortable Room</td>     </tr>     <tr>       <th>1</th>       <td>Quiet</td>     </tr>     <tr>       <th>2</th>       <td>friendly</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_65234d0add6348aaa842e0b3759040f3.setContent(html_c35a0c7fed72445aa22aa10861618027);
+        
+
+        marker_87ed861a3fed47cba78a3350c777ea21.bindPopup(popup_65234d0add6348aaa842e0b3759040f3)
+        ;
+
+        
+    
+    
+            var marker_d50c24471cde4d5b998e4667b85dcd00 = L.marker(
+                [38.4758406, -80.8408415],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_ed3b50859afb42f4ad8ce59bceb96ba5 = L.popup({"maxWidth": 450});
+
+        
+            var html_1e2568b33f334c6d9b4d72d9e85c6a1a = $(`<div id="html_1e2568b33f334c6d9b4d72d9e85c6a1a" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>Staff Service</td>     </tr>     <tr>       <th>1</th>       <td>furniture</td>     </tr>     <tr>       <th>2</th>       <td>Breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_ed3b50859afb42f4ad8ce59bceb96ba5.setContent(html_1e2568b33f334c6d9b4d72d9e85c6a1a);
+        
+
+        marker_d50c24471cde4d5b998e4667b85dcd00.bindPopup(popup_ed3b50859afb42f4ad8ce59bceb96ba5)
+        ;
+
+        
+    
+    
+            var marker_fa17314f8ea8402d80bac53735757241 = L.marker(
+                [43.1700264, -107.5685348],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_51e39729748b4fc297a267c20caab283 = L.popup({"maxWidth": 450});
+
+        
+            var html_1797829df61d4fc1a52b682e6a2636ad = $(`<div id="html_1797829df61d4fc1a52b682e6a2636ad" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>1</td>     </tr>     <tr>       <th>1</th>       <td>2</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_51e39729748b4fc297a267c20caab283.setContent(html_1797829df61d4fc1a52b682e6a2636ad);
+        
+
+        marker_fa17314f8ea8402d80bac53735757241.bindPopup(popup_51e39729748b4fc297a267c20caab283)
+        ;
+
+        
+    
+    
+            var marker_7587e588fafe478dac75f821f7068c56 = L.marker(
+                [35.6729639, -79.0392919],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_f52866fd5c7949eba49751b46b60f2d3 = L.popup({"maxWidth": 450});
+
+        
+            var html_fad6ddb4e34d403191807ea229bf6227 = $(`<div id="html_fad6ddb4e34d403191807ea229bf6227" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>1</td>     </tr>     <tr>       <th>1</th>       <td>2</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_f52866fd5c7949eba49751b46b60f2d3.setContent(html_fad6ddb4e34d403191807ea229bf6227);
+        
+
+        marker_7587e588fafe478dac75f821f7068c56.bindPopup(popup_f52866fd5c7949eba49751b46b60f2d3)
+        ;
+
+        
+    
+    
+            var marker_cf27a07ecc1244c8a2d59edd6fee4d15 = L.marker(
+                [40.177, -89.396],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_38ff59df19194b47bacaa553dbec3fd8 = L.popup({"maxWidth": 450});
+
+        
+            var html_edf96f826847432ea4c0777b3aab75e7 = $(`<div id="html_edf96f826847432ea4c0777b3aab75e7" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>location</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>breakfast</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_38ff59df19194b47bacaa553dbec3fd8.setContent(html_edf96f826847432ea4c0777b3aab75e7);
+        
+
+        marker_cf27a07ecc1244c8a2d59edd6fee4d15.bindPopup(popup_38ff59df19194b47bacaa553dbec3fd8)
+        ;
+
+        
+    
+    
+            var marker_f67913b1a5974ed5b73b2131b3bcf0a1 = L.marker(
+                [30.475, -92.505],
+                {}
+            ).addTo(map_d33a2dc1e08d4f7b8d3aa322aa294d9f);
+        
+    
+        var popup_2f956f5fd276494d81febcfb2f33dd10 = L.popup({"maxWidth": 450});
+
+        
+            var html_a2844f0a61ff4e2cb83e2547104e8b3a = $(`<div id="html_a2844f0a61ff4e2cb83e2547104e8b3a" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe">   <thead>     <tr style="text-align: right;">       <th></th>       <th>keywords</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>breakfast</td>     </tr>     <tr>       <th>1</th>       <td>Comfortable room</td>     </tr>     <tr>       <th>2</th>       <td>staff Services</td>     </tr>   </tbody> </table></div>`)[0];
+            popup_2f956f5fd276494d81febcfb2f33dd10.setContent(html_a2844f0a61ff4e2cb83e2547104e8b3a);
+        
+
+        marker_f67913b1a5974ed5b73b2131b3bcf0a1.bindPopup(popup_2f956f5fd276494d81febcfb2f33dd10)
+        ;
+
+        
+    
+</script>
